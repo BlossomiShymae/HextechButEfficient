@@ -8,7 +8,7 @@ from scripts.be_management import BEMassDisenchant, BEMassOpening
 from scripts.oe_management import ZeroSkinShards
 
 # from scripts.settings_backup import BackupSettings, RestoreSettings
-from scripts.skin_shards_stats import SkinCollectionStats, SkinShardsStats
+from scripts.skin_shards_stats import SkinCollectionStats, SkinShardsStats, ChallengeCollectionStats
 from scripts.utilities import CombineFragmentKeys, RemoveChallengeTokens, SetRandomIcon
 
 from .const import IMAGE_PATH
@@ -147,6 +147,7 @@ class HextechButEfficientApp(ctk.CTk):
             self.skin_shards_stats_nav,
             Script("Skin Shards Stats", SkinShardsStats, "shark.png"),
             Script("Skin Collection Stats", SkinCollectionStats, "skis.png"),
+            Script("Challenge Collection Stats", ChallengeCollectionStats, "skis.png")
         )
 
         # 5 UTILITIES
